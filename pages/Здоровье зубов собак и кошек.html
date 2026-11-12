@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- 🆕 ИЗМЕНЕНИЕ 1: Оптимизированный Title для SEO и GEO -->
+    <title>Здоровье зубов собак и кошек: статьи и протоколы WSAVA | 103vet</title>
+    
+    <meta name="description" content="33 экспертных статьи о здоровье зубов и полости рта собак и кошек. Пародонтит, FORL, гигиена, стоматологические игрушки и протоколы чистки на основе WSAVA.">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="theme-color" content="#0D1420">
+    <link rel="canonical" href="https://nutrition.103vet.by/dental">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nutrition.103vet.by/dental">
+    <meta property="og:title" content="Здоровье зубов: 33 статьи | 103vet">
+    <meta property="og:description" content="33 экспертных статьи о здоровье зубов и полости рта. Пародонтит, FORL, гигиена и протоколы чистки.">
+    <meta property="og:site_name" content="103vet.by Нутрициология">
+    
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Здоровье зубов: 33 статьи | 103vet">
+    <meta name="twitter:description" content="33 экспертных статьи о здоровье зубов и полости рта.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Примечание: &display=swap УЖЕ присутствует в исходном коде, аудитор ошибся -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- 🆕 ИЗМЕНЕНИЕ 2: Микроразметка VeterinaryCare для AIO и локального SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "VeterinaryCare",
+      "name": "103vet.by",
+      "description": "Вызов ветеринара на дом в Минске. Доказательная ветеринарная терапия и нутрициология.",
+      "url": "https://103vet.by/",
+      "telephone": "+375296703198",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Минск",
+        "addressCountry": "BY"
+      },
+      "sameAs": [
+        "https://www.instagram.com/103vet.by/",
+        "https://2gis.by/minsk/firm/70000001116399231"
+      ]
+    }
+    </script>
+
+    <!-- 🆕 ИЗМЕНЕНИЕ 3: Микроразметка FAQPage для GEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Почему у собак и кошек образуется зубной камень?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Зубной камень образуется из-за минерализации зубного налета. Мягкий корм ускоряет этот процесс, так как не обеспечивает механической очистки зубов. Биопленка формируется за 24 часа, а затем минерализуется, образуя поддесневой камень."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как часто нужно чистить зубы питомцу?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Идеальная частота — ежедневно. Если это невозможно, то минимум 3-4 раза в неделю. Регулярная чистка предотвращает образование налета и развитие пародонтита. Приучение к чистке должно проходить постепенно, за 14 дней, без стресса."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что такое FORL у кошек?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "FORL (Feline Odontoclastic Resorptive Lesions) — это резорбция зубов у кошек, болезненное состояние, при котором зубы разрушаются изнутри. Пломбирование не работает, требуется удаление пораженных зубов. Заболевание затрагивает до 70% кошек старше 5 лет."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --bg-deep: #0D1420;
+            --bg-card: rgba(30, 41, 59, 0.4);
+            --bg-card-hover: rgba(30, 41, 59, 0.7);
+            --ink: #F1F5F9;
+            --ink-muted: #A8B2C1;
+            --gold: #E2C073;
+            --gold-light: #F5DEB3;
+            --gold-deep: #B8943F;
+            --mono: 'Space Mono', monospace;
+            --serif: 'Playfair Display', serif;
+            --sans: 'Inter', sans-serif;
+            --max-width: 1200px;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: var(--sans);
+            background: var(--bg-deep);
+            color: var(--ink);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        .container { max-width: var(--max-width); margin: 0 auto; padding: 0 24px; }
+
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(13, 20, 32, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(226, 192, 115, 0.15);
+        }
+
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 24px;
+        }
+
+        .logo {
+            font-family: var(--serif);
+            font-size: 20px;
+            color: var(--gold-light);
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 32px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--ink-muted);
+            text-decoration: none;
+            font-family: var(--mono);
+            font-size: 11px;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover { color: var(--gold-light); }
+
+        .nav-cta {
+            background: var(--gold);
+            color: var(--bg-deep);
+            padding: 10px 20px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 13px;
+        }
+
+        .breadcrumbs {
+            padding: 20px 0;
+            font-family: var(--mono);
+            font-size: 11px;
+            color: var(--ink-muted);
+        }
+
+        .breadcrumbs a {
+            color: var(--gold);
+            text-decoration: none;
+        }
+
+        /* WCAG 2.4.7 / 2.4.13: Видимый фокус для клавиатурной навигации */
+        a:focus-visible, button:focus-visible, .cluster-card:focus-visible, .path-step-link:focus-visible {
+            outline: 2px solid var(--gold);
+            outline-offset: 4px;
+            border-radius: 4px;
+        }
+
+        /* ═══════════════════════════════════════════════
+           ПРИЕМ 1: FEATURED-БЛОК (Флагманская статья)
+           ═══════════════════════════════════════════════ */
+        .featured {
+            padding: 60px 0 80px;
+            border-bottom: 1px solid rgba(226, 192, 115, 0.1);
+        }
+
+        .featured-label {
+            font-family: var(--mono);
+            font-size: 11px;
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 24px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .featured-label::before {
+            content: '';
+            width: 40px;
+            height: 1px;
+            background: var(--gold);
+        }
+
+        .featured-card {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            background: linear-gradient(135deg, rgba(30, 41, 59, 0.6) 0%, rgba(13, 20, 32, 0.8) 100%);
+            border: 1px solid rgba(226, 192, 115, 0.2);
+            border-radius: 12px;
+            padding: 60px;
+            text-decoration: none;
+            color: var(--ink);
+            transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .featured-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--gold), transparent);
+        }
+
+        .featured-card:hover {
+            border-color: var(--gold);
+            transform: translateY(-4px);
+            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.5), 0 0 60px rgba(226, 192, 115, 0.15);
+        }
+
+        .featured-content { display: flex; flex-direction: column; justify-content: center; }
+
+        .featured-category {
+            font-family: var(--mono);
+            font-size: 11px;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 20px;
+        }
+
+        .featured-title {
+            font-family: var(--serif);
+            font-size: clamp(28px, 3.5vw, 44px);
+            line-height: 1.15;
+            margin-bottom: 24px;
+            color: var(--gold-light);
+        }
+
+        .featured-desc {
+            font-size: 16px;
+            line-height: 1.7;
+            color: var(--ink-muted);
+            margin-bottom: 32px;
+        }
+
+        .featured-meta {
+            display: flex;
+            gap: 24px;
+            font-family: var(--mono);
+            font-size: 11px;
+            color: var(--ink-muted);
+            letter-spacing: 0.1em;
+        }
+
+        .featured-visual {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 180px;
+            opacity: 0.3;
+        }
+
+        /* ═══════════════════════════════════════════════
+           ПРИЕМ 2: LEARNING PATH (Путь изучения)
+           ═══════════════════════════════════════════════ */
+        .learning-path {
+            padding: 80px 0;
+            border-bottom: 1px solid rgba(226, 192, 115, 0.1);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-label {
+            font-family: var(--mono);
+            font-size: 11px;
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 16px;
+            display: block;
+        }
+
+        .section-title {
+            font-family: var(--serif);
+            font-size: clamp(28px, 4vw, 44px);
+            line-height: 1.2;
+            color: var(--ink);
+        }
+
+        .path-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            position: relative;
+        }
+
+        .path-step {
+            background: var(--bg-card);
+            border: 1px solid rgba(226, 192, 115, 0.15);
+            border-radius: 8px;
+            padding: 28px 24px;
+            position: relative;
+            transition: all 0.4s;
+        }
+
+        .path-step:hover {
+            border-color: var(--gold);
+            transform: translateY(-4px);
+        }
+
+        .path-step-number {
+            position: absolute;
+            top: -12px;
+            left: 24px;
+            background: var(--gold);
+            color: var(--bg-deep);
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--mono);
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        .path-step-title {
+            font-family: var(--serif);
+            font-size: 18px;
+            color: var(--gold-light);
+            margin: 12px 0 12px;
+            line-height: 1.3;
+        }
+
+        .path-step-desc {
+            font-size: 13px;
+            color: var(--ink-muted);
+            line-height: 1.6;
+            margin-bottom: 16px;
+        }
+
+        .path-step-link {
+            font-family: var(--mono);
+            font-size: 11px;
+            color: var(--gold);
+            text-decoration: none;
+            letter-spacing: 0.1em;
+        }
+
+        /* ═══════════════════════════════════════════════
+           ПРИЕМ 3: ГРУППИРОВКА ПО ПОДКЛАСТЕРАМ
+           ═══════════════════════════════════════════════ */
+        .clusters {
+            padding: 80px 0;
+        }
+
+        .cluster-group {
+            margin-bottom: 80px;
+        }
+
+        .cluster-group:last-child { margin-bottom: 0; }
+
+        .cluster-header {
+            display: flex;
+            align-items: baseline;
+            gap: 20px;
+            margin-bottom: 32px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid rgba(226, 192, 115, 0.15);
+        }
+
+        .cluster-icon {
+            font-size: 32px;
+            opacity: 0.8;
+        }
+
+        .cluster-title {
+            font-family: var(--serif);
+            font-size: clamp(24px, 3vw, 32px);
+            color: var(--ink);
+            flex-grow: 1;
+        }
+
+        .cluster-count {
+            font-family: var(--mono);
+            font-size: 11px;
+            letter-spacing: 0.15em;
+            color: var(--gold);
+            text-transform: uppercase;
+        }
+
+        .cluster-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .cluster-card {
+            background: var(--bg-card);
+            border: 1px solid rgba(226, 192, 115, 0.12);
+            border-radius: 6px;
+            padding: 24px;
+            text-decoration: none;
+            color: var(--ink);
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .cluster-card:hover {
+            border-color: var(--gold);
+            background: var(--bg-card-hover);
+            transform: translateY(-4px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .cluster-card-tag {
+            font-family: var(--mono);
+            font-size: 10px;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 10px;
+        }
+
+        .cluster-card-title {
+            font-family: var(--serif);
+            font-size: 18px;
+            line-height: 1.3;
+            color: var(--gold-light);
+            margin-bottom: 10px;
+        }
+
+        .cluster-card-desc {
+            font-size: 13px;
+            line-height: 1.6;
+            color: var(--ink-muted);
+            flex-grow: 1;
+        }
+
+        /* FAQ СЕКЦИЯ */
+        .faq-section {
+            padding: 80px 0;
+            border-top: 1px solid rgba(226, 192, 115, 0.1);
+        }
+        .faq-item {
+            border-bottom: 1px solid rgba(226, 192, 115, 0.15);
+        }
+        .faq-question {
+            width: 100%;
+            padding: 24px 0;
+            background: none;
+            border: none;
+            font-family: var(--serif);
+            font-size: clamp(18px, 2.5vw, 22px);
+            text-align: left;
+            cursor: pointer;
+            color: var(--ink);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: color 0.3s;
+        }
+        .faq-question:hover {
+            color: var(--gold-light);
+        }
+        .faq-question .faq-icon {
+            font-size: 24px;
+            color: var(--gold);
+            transition: transform 0.3s;
+            flex-shrink: 0;
+            margin-left: 20px;
+        }
+        .faq-item.open .faq-icon {
+            transform: rotate(45deg);
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s cubic-bezier(0.16, 1, 0.3, 1), padding 0.4s;
+        }
+        .faq-item.open .faq-answer {
+            max-height: 500px;
+            padding-bottom: 24px;
+        }
+        .faq-answer p {
+            font-size: 15px;
+            line-height: 1.7;
+            color: var(--ink-muted);
+            max-width: 900px;
+        }
+
+        /* ══════════════════════════════════════════════
+           АДАПТИВ
+           ═══════════════════════════════════════════════ */
+        @media (max-width: 1024px) {
+            .featured-card { grid-template-columns: 1fr; padding: 40px; gap: 30px; }
+            .featured-visual { font-size: 120px; }
+            .path-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            
+            .featured { padding: 40px 0 60px; }
+            .featured-card { padding: 28px; }
+            .featured-title { font-size: 26px; }
+            .featured-visual { font-size: 80px; }
+            .featured-meta { flex-direction: column; gap: 8px; }
+
+            .path-grid { grid-template-columns: 1fr; }
+
+            .cluster-header { flex-wrap: wrap; gap: 12px; }
+            .cluster-grid { grid-template-columns: 1fr; gap: 16px; }
+            .cluster-card { padding: 20px; }
+        }
+
+        footer {
+            padding: 60px 0 30px;
+            border-top: 1px solid rgba(226, 192, 115, 0.15);
+            text-align: center;
+        }
+
+        footer p {
+            color: var(--ink-muted);
+            font-size: 13px;
+            margin-bottom: 12px;
+        }
+
+        footer a { color: var(--gold); text-decoration: none; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="container">
+            <a href="/" class="logo">103vet · Nutrition</a>
+            <ul class="nav-links">
+                <li><a href="/dental">Здоровье зубов</a></li>
+                <li><a href="/gastro">Пищеварение</a></li>
+                <li><a href="/protocols">Протоколы</a></li>
+                <li><a href="/razbor-kormov">Разбор кормов</a></li>
+            </ul>
+            <a href="tel:+375296703198" class="nav-cta">Вызвать врача</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <div class="breadcrumbs" aria-label="Навигационная цепочка">
+                <a href="/">Главная</a> → <a href="/dental">Здоровье зубов</a> → <span>Все 33 статьи</span>
+            </div>
+        </div>
+
+        <!-- ═══════════════════════════════════════════════
+             ПРИЕМ 1: FEATURED-БЛОК
+             ═══════════════════════════════════════════════ -->
+        <section class="featured">
+            <div class="container">
+                <div class="featured-label">Флагманская статья раздела</div>
+                
+                <a href="/dental/parodontit" class="featured-card">
+                    <div class="featured-content">
+                        <div class="featured-category">[ Пародонтит · 15 минут чтения ]</div>
+                        <h2 class="featured-title">Пародонтит: невидимая связь с текстурой корма</h2>
+                        <p class="featured-desc">
+                            Почему 80% собак старше 3 лет имеют признаки заболевания десен. Как мягкий корм ускоряет образование поддесневого камня, и почему «чистка ультразвуком» без изменения рациона — это борьба с симптомом, а не с причиной.
+                        </p>
+                        <div class="featured-meta">
+                            <span>📖 25 ссылок на исследования</span>
+                            <span>🔬 Протоколы <span lang="en">WSAVA</span></span>
+                            <span>📊 8 клинических случаев</span>
+                        </div>
+                    </div>
+                    <div class="featured-visual" aria-hidden="true">🦷</div>
+                </a>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════
+             ПРИЕМ 2: LEARNING PATH
+             ═══════════════════════════════════════════════ -->
+        <section class="learning-path">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">[ Рекомендуемый путь ]</span>
+                    <h2 class="section-title">С чего начать изучение раздела</h2>
+                </div>
+
+                <div class="path-grid">
+                    <div class="path-step">
+                        <div class="path-step-number">1</div>
+                        <h3 class="path-step-title">Поймите основу</h3>
+                        <p class="path-step-desc">Что такое биопленка и как за 24 часа налет превращается в камень</p>
+                        <a href="/glossary/biofilm" class="path-step-link">→ Читать</a>
+                    </div>
+
+                    <div class="path-step">
+                        <div class="path-step-number">2</div>
+                        <h3 class="path-step-title">Научитесь видеть</h3>
+                        <p class="path-step-desc">Чек-лист осмотра полости рта: что заметить до визита к врачу</p>
+                        <a href="/dental/osmot-polosti-rta" class="path-step-link">→ Читать</a>
+                    </div>
+
+                    <div class="path-step">
+                        <div class="path-step-number">3</div>
+                        <h3 class="path-step-title">Освойте профилактику</h3>
+                        <p class="path-step-desc">Протокол приучения к чистке зубов за 14 дней без стресса</p>
+                        <a href="/dental/chistka-zubov" class="path-step-link">→ Читать</a>
+                    </div>
+
+                    <div class="path-step">
+                        <div class="path-step-number">4</div>
+                        <h3 class="path-step-title">Углубитесь</h3>
+                        <p class="path-step-desc">Выберите тему: пародонтит, <span lang="en">FORL</span> у кошек, игрушки, питание</p>
+                        <a href="#clusters" class="path-step-link">→ К разделам ниже</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════
+             ПРИЕМ 3: ГРУППИРОВКА ПО ПОДКЛАСТЕРАМ
+             ═══════════════════════════════════════════════ -->
+        <section class="clusters" id="clusters" aria-label="Тематические кластеры статей">
+            <div class="container">
+
+                <!-- Кластер 1: Пародонтит -->
+                <div class="cluster-group">
+                    <div class="cluster-header">
+                        <div class="cluster-icon" aria-hidden="true">🦷</div>
+                        <h3 class="cluster-title">Пародонтит и заболевания десен</h3>
+                        <div class="cluster-count">7 статей</div>
+                    </div>
+                    <div class="cluster-grid">
+                        <a href="/dental/parodontit" class="cluster-card">
+                            <div class="cluster-card-tag">Флагман</div>
+                            <h4 class="cluster-card-title">Пародонтит: связь с текстурой корма</h4>
+                            <p class="cluster-card-desc">Как мягкий корм ускоряет образование камня. Протокол профилактики.</p>
+                        </a>
+                        <a href="/dental/parodontoz-vs-parodontit" class="cluster-card">
+                            <div class="cluster-card-tag">Дифференциация</div>
+                            <h4 class="cluster-card-title">Пародонтоз vs Пародонтит</h4>
+                            <p class="cluster-card-desc">Почему зубы не выпадают «от старости». Разница процессов.</p>
+                        </a>
+                        <a href="/dental/vliyanie-myagkogo-korma-na-zuby-sobak" class="cluster-card">
+                            <div class="cluster-card-tag">Исследование</div>
+                            <h4 class="cluster-card-title">Мягкий корм и поддесневой камень</h4>
+                            <p class="cluster-card-desc">Скорость образования отложений при влажных рационах.</p>
+                        </a>
+                        <a href="/dental/poterya-zubov-u-sobak" class="cluster-card">
+                            <div class="cluster-card-tag">Пожилые собаки</div>
+                            <h4 class="cluster-card-title">Потеря зубов: норма или патология?</h4>
+                            <p class="cluster-card-desc">Адаптация рациона при частичной или полной адентии.</p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Кластер 2: Гигиена -->
+                <div class="cluster-group">
+                    <div class="cluster-header">
+                        <div class="cluster-icon" aria-hidden="true">🪥</div>
+                        <h3 class="cluster-title">Гигиена и домашний уход</h3>
+                        <div class="cluster-count">9 статей</div>
+                    </div>
+                    <div class="cluster-grid">
+                        <a href="/dental/chistka-zubov" class="cluster-card">
+                            <div class="cluster-card-tag">Протокол</div>
+                            <h4 class="cluster-card-title">Приучение к чистке за 14 дней</h4>
+                            <p class="cluster-card-desc">Пошаговая десенсибилизация без стресса и пищевой аверсии.</p>
+                        </a>
+                        <a href="/dental/desensibilizaciya-chistki" class="cluster-card">
+                            <div class="cluster-card-tag">Протокол</div>
+                            <h4 class="cluster-card-title">Протокол десенсибилизации</h4>
+                            <p class="cluster-card-desc">От прикосновений до полной чистки. 14-дневная программа.</p>
+                        </a>
+                        <a href="/dental/pasta-i-shchetka" class="cluster-card">
+                            <div class="cluster-card-tag">Гид</div>
+                            <h4 class="cluster-card-title">Как выбрать пасту и щетку</h4>
+                            <p class="cluster-card-desc">Ферменты vs абразивы. Почему человеческая паста токсична.</p>
+                        </a>
+                        <a href="/dental/alternativy-shchetke" class="cluster-card">
+                            <div class="cluster-card-tag">Разбор</div>
+                            <h4 class="cluster-card-title">Альтернативы зубной щетке</h4>
+                            <p class="cluster-card-desc">Салфетки, напальчники, водные добавки: что реально работает.</p>
+                        </a>
+                        <a href="/dental/oshibki-pri-chistke" class="cluster-card">
+                            <div class="cluster-card-tag">Ошибки</div>
+                            <h4 class="cluster-card-title">Ошибки владельцев при чистке</h4>
+                            <p class="cluster-card-desc">Почему насилие формирует пищевую аверсию.</p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Кластер 3: У кошек -->
+                <div class="cluster-group">
+                    <div class="cluster-header">
+                        <div class="cluster-icon" aria-hidden="true">🐱</div>
+                        <h3 class="cluster-title">Стоматология у кошек</h3>
+                        <div class="cluster-count">8 статей</div>
+                    </div>
+                    <div class="cluster-grid">
+                        <a href="/dental/zubnoy-kamen-koshek" class="cluster-card">
+                            <div class="cluster-card-tag">Флагман</div>
+                            <h4 class="cluster-card-title">Зубной камень у кошек</h4>
+                            <p class="cluster-card-desc">Почему верхние моляры и клыки страдают первыми.</p>
+                        </a>
+                        <a href="/dental/forl" class="cluster-card">
+                            <div class="cluster-card-tag">Важно</div>
+                            <h4 class="cluster-card-title"><span lang="en">FORL</span>: резорбция зубов</h4>
+                            <p class="cluster-card-desc">Стадии, симптомы и почему пломбирование не работает.</p>
+                        </a>
+                        <a href="/dental/stomatit-u-koshek" class="cluster-card">
+                            <div class="cluster-card-tag">Иммунология</div>
+                            <h4 class="cluster-card-title">Стоматит: роль иммунной системы</h4>
+                            <p class="cluster-card-desc">ЛПС и влияние нутрициологии на течение болезни.</p>
+                        </a>
+                        <a href="/dental/gingivit-u-koshek" class="cluster-card">
+                            <div class="cluster-card-tag">Дифференциация</div>
+                            <h4 class="cluster-card-title">Гингивит vs Стоматит</h4>
+                            <p class="cluster-card-desc">Как отличить локальное воспаление от системного.</p>
+                        </a>
+                        <a href="/dental/chistka-zubov-koshek-pod-narkozom" class="cluster-card">
+                            <div class="cluster-card-tag">Процедура</div>
+                            <h4 class="cluster-card-title">Чистка под наркозом</h4>
+                            <p class="cluster-card-desc">Почему это безопасно и необходимо. Ультразвук, полировка.</p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Кластер 4: Симптомы -->
+                <div class="cluster-group">
+                    <div class="cluster-header">
+                        <div class="cluster-icon" aria-hidden="true">🩸</div>
+                        <h3 class="cluster-title">Симптомы и первая помощь</h3>
+                        <div class="cluster-count">5 статей</div>
+                    </div>
+                    <div class="cluster-grid">
+                        <a href="/simptomy/krovotochivost-desen" class="cluster-card">
+                            <div class="cluster-card-tag">Флагман</div>
+                            <h4 class="cluster-card-title">Кровоточивость десен</h4>
+                            <p class="cluster-card-desc">Локальная проблема или системный сбой? Алгоритм оценки.</p>
+                        </a>
+                        <a href="/simptomy/krov-na-igrushke" class="cluster-card">
+                            <div class="cluster-card-tag">Дифференциация</div>
+                            <h4 class="cluster-card-title">Кровь на игрушке</h4>
+                            <p class="cluster-card-desc">Травма десны vs начинающийся гингивит.</p>
+                        </a>
+                        <a href="/simptomy/sistemnaya-krovotochivost" class="cluster-card">
+                            <div class="cluster-card-tag">Системные причины</div>
+                            <h4 class="cluster-card-title">Нарушения свертываемости</h4>
+                            <p class="cluster-card-desc">Болезни почек, аутоиммунные процессы, токсины.</p>
+                        </a>
+                        <a href="/simptomy/pervaya-pomoshh-desny" class="cluster-card">
+                            <div class="cluster-card-tag">Инструкция</div>
+                            <h4 class="cluster-card-title">Первая помощь до визита</h4>
+                            <p class="cluster-card-desc">Что можно и нельзя делать. Холод, гемостатики.</p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Кластер 5: Игрушки и питание -->
+                <div class="cluster-group">
+                    <div class="cluster-header">
+                        <div class="cluster-icon" aria-hidden="true">🎾</div>
+                        <h3 class="cluster-title">Игрушки, лакомства и текстура корма</h3>
+                        <div class="cluster-count">8 статей</div>
+                    </div>
+                    <div class="cluster-grid">
+                        <a href="/dental/stomatologicheskie-igrushki-i-lakomstva" class="cluster-card">
+                            <div class="cluster-card-tag">Флагман</div>
+                            <h4 class="cluster-card-title"><span lang="en">Dental</span>-игрушки: маркетинг или польза?</h4>
+                            <p class="cluster-card-desc">Тест на твердость, правило ногтя, <span lang="en">VOHC</span>-маркировка.</p>
+                        </a>
+                        <a href="/dental/test-igrushek-na-tverdost" class="cluster-card">
+                            <div class="cluster-card-tag">Инструкция</div>
+                            <h4 class="cluster-card-title">Тест на твердость: правило ногтя</h4>
+                            <p class="cluster-card-desc">Простой способ проверить безопасность для эмали.</p>
+                        </a>
+                        <a href="/dental/sostav-dentalnyh-lakomstv" class="cluster-card">
+                            <div class="cluster-card-tag">Разбор состава</div>
+                            <h4 class="cluster-card-title">Скрытые калории в <span lang="en">dental</span>-лакомствах</h4>
+                            <p class="cluster-card-desc">Крахмал, сахар и риск усугубления налета.</p>
+                        </a>
+                        <a href="/dental/myagkaya-pishcha-prikus" class="cluster-card">
+                            <div class="cluster-card-tag">Развитие</div>
+                            <h4 class="cluster-card-title">Мягкая пища и формирование прикуса</h4>
+                            <p class="cluster-card-desc">Риски для щенков и котят в период роста челюсти.</p>
+                        </a>
+                        <a href="/dental/smena-zubov-u-shhenkov" class="cluster-card">
+                            <div class="cluster-card-tag">Щенки</div>
+                            <h4 class="cluster-card-title">Смена молочных зубов</h4>
+                            <p class="cluster-card-desc">Роль текстуры корма в безболезненном выпадении.</p>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- FAQ СЕКЦИЯ (визуальная + Schema FAQPage) -->
+        <section class="faq-section" aria-label="Часто задаваемые вопросы">
+            <div class="container">
+                <div class="section-header" style="text-align: center; margin-bottom: 60px;">
+                    <span class="section-label">[ Частые вопросы ]</span>
+                    <h2 class="section-title" style="font-size: clamp(28px, 4vw, 36px);">Стоматология: ответы на главные вопросы</h2>
+                </div>
+                
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-1">
+                            <span>Почему у собак и кошек образуется зубной камень?</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-answer" id="faq-1" aria-hidden="true">
+                            <p>Зубной камень образуется из-за минерализации зубного налета. Мягкий корм ускоряет этот процесс, так как не обеспечивает механической очистки зубов. Биопленка формируется за 24 часа, а затем минерализуется, образуя поддесневой камень.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-2">
+                            <span>Как часто нужно чистить зубы питомцу?</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-answer" id="faq-2" aria-hidden="true">
+                            <p>Идеальная частота — ежедневно. Если это невозможно, то минимум 3-4 раза в неделю. Регулярная чистка предотвращает образование налета и развитие пародонтита. Приучение к чистке должно проходить постепенно, за 14 дней, без стресса.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-3">
+                            <span>Что такое <span lang="en">FORL</span> у кошек?</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-answer" id="faq-3" aria-hidden="true">
+                            <p><span lang="en">FORL</span> (Feline Odontoclastic Resorptive Lesions) — это резорбция зубов у кошек, болезненное состояние, при котором зубы разрушаются изнутри. Пломбирование не работает, требуется удаление пораженных зубов. Заболевание затрагивает до 70% кошек старше 5 лет.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 103vet.by · Ветеринарная нутрициология</p>
+            <p><a href="/">Главная</a> · <a href="/blog">Блог</a> · <a href="tel:+375296703198">+375 (29) 670-31-98</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // Скрипт аккордеона оставлен без изменений. 
+        // Он не блокирует рендеринг, находится в конце body, а текст ответов уже присутствует в исходном HTML, 
+        // что делает его полностью видимым для всех AI-парсеров.
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const item = button.parentElement;
+                const answer = item.querySelector('.faq-answer');
+                const isOpen = item.classList.contains('open');
+
+                document.querySelectorAll('.faq-item').forEach(otherItem => {
+                    if (otherItem !== item) {
+                        otherItem.classList.remove('open');
+                        otherItem.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+                        otherItem.querySelector('.faq-answer').setAttribute('aria-hidden', 'true');
+                    }
+                });
+
+                if (!isOpen) {
+                    item.classList.add('open');
+                    button.setAttribute('aria-expanded', 'true');
+                    answer.setAttribute('aria-hidden', 'false');
+                } else {
+                    item.classList.remove('open');
+                    button.setAttribute('aria-expanded', 'false');
+                    answer.setAttribute('aria-hidden', 'true');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

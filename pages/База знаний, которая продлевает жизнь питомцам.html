@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>База знаний, которая продлевает жизнь питомцам | 103vet</title>
+  
+  <!-- 🆕 ИЗМЕНЕНИЕ v1.4: Усиление meta description упоминанием WSAVA (согласно документу) -->
+  <meta name="description" content="Экспертная база знаний на основе протоколов WSAVA: 142 материала, которые помогут вам предотвратить болезни, распознать ошибки в питании и продлить жизнь вашего питомца на годы.">
+  
+  <!-- Микро-оптимизация UX: Theme Color для мобильных браузеров -->
+  <meta name="theme-color" content="#0D1420">
+  
+  <!-- Стандартные метатеги для индексации и AI-парсеров -->
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  
+  <!-- Open Graph для соцсетей и мессенджеров -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://nutrition.103vet.by/">
+  <meta property="og:title" content="База знаний, которая продлевает жизнь питомцам | 103vet">
+  <meta property="og:description" content="Экспертная база знаний на основе протоколов WSAVA: 142 материала по ветеринарной нутрициологии.">
+  <meta property="og:site_name" content="103vet.by Нутрициология">
+  
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="База знаний, которая продлевает жизнь питомцам | 103vet">
+  <meta name="twitter:description" content="142 экспертных материала по ветеринарной нутрициологии на основе протоколов WSAVA.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- SEO & GEO OPTIMIZATION: CollectionPage с усиленным Entity Linking (mentions) -->
+  <!-- dateModified для сигнала актуальности YMYL (внедрено в v1.3) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "База знаний по ветеринарной нутрициологии 103vet",
+    "description": "142 экспертных материала, основанных на протоколах WSAVA, о питании, здоровье ЖКТ, зубов и профилактике заболеваний у собак и кошек.",
+    "url": "https://nutrition.103vet.by/",
+    "dateModified": "2026-11-09T10:00:00+03:00",
+    "publisher": {
+      "@type": "VeterinaryOrganization",
+      "name": "103vet.by",
+      "url": "https://103vet.by"
+    },
+    "about": {
+      "@type": "MedicalSpecialty",
+      "name": "Ветеринарная нутрициология"
+    },
+    "mentions": [
+      { "@type": "Organization", "name": "World Small Animal Veterinary Association", "url": "https://wsava.org/" },
+      { "@type": "Organization", "name": "Association of American Feed Control Officials", "url": "https://www.aafco.org/" },
+      { "@type": "Organization", "name": "European Pet Food Industry Federation", "url": "https://europeanpetfood.org/" }
+    ]
+  }
+  </script>
+
+  <!-- SEO OPTIMIZATION: ItemList Schema для карты контента хаб-страницы -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Основные разделы базы знаний 103vet",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Здоровье зубов", "url": "/dental" },
+      { "@type": "ListItem", "position": 2, "name": "Пищеварение и ЖКТ", "url": "/gastro" },
+      { "@type": "ListItem", "position": 3, "name": "Клинические протоколы", "url": "/protocols" },
+      { "@type": "ListItem", "position": 4, "name": "Разбор составов кормов", "url": "/razbor-kormov" },
+      { "@type": "ListItem", "position": 5, "name": "Флагманские статьи", "url": "/blog" }
+    ]
+  }
+  </script>
+
+  <!-- E-E-A-T OPTIMIZATION: Entity Schema для автора с sameAs для перекрестной верификации -->
+  <!-- dateModified для актуальности профиля эксперта (внедрено в v1.3) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Главный ветеринарный врач-нутрициолог 103vet",
+    "jobTitle": "Ветеринарный врач-нутрициолог",
+    "worksFor": {
+      "@type": "VeterinaryOrganization",
+      "name": "103vet.by",
+      "url": "https://103vet.by",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Минск",
+        "addressCountry": "BY"
+      }
+    },
+    "knowsAbout": [
+      "Ветеринарная нутрициология",
+      "Диетология собак",
+      "Диетология кошек",
+      "Клиническое питание животных"
+    ],
+    "sameAs": [
+      "https://103vet.by/team",
+      "https://www.linkedin.com/company/103vet"
+    ],
+    "dateModified": "2026-11-09",
+    "url": "https://nutrition.103vet.by/"
+  }
+  </script>
+
+  <!-- SEO OPTIMIZATION: BreadcrumbList с относительными URL (Правило Siloing) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Главная",
+        "item": "https://103vet.by"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "База знаний по нутрициологии",
+        "item": "https://nutrition.103vet.by/"
+      }
+    ]
+  }
+  </script>
+
+  <!-- 🆕 УЛУЧШЕНИЕ v1.4: Шаблон ImageObject с явным требованием width/height (согласно документу) -->
+  <!-- 
+    ИНСТРУКЦИЯ ПО АКТИВАЦИИ:
+    Когда вы добавите первую инфографику на эту страницу, раскомментируйте этот блок 
+    и подставьте реальные данные. 
+    
+    ⚠️ КРИТИЧЕСКИ ВАЖНО (требование документа по производительности):
+    Атрибуты width и height ОБЯЗАТЕЛЬНЫ. Они резервируют место для изображения 
+    до его загрузки, предотвращая сдвиги макета (CLS) — одну из ключевых метрик Core Web Vitals.
+    
+    Это превратит изображение из декоративного элемента в машиночитаемый источник информации,
+    который AI-системы (Google AI Overviews, Perplexity) смогут извлекать и цитировать.
+  -->
+  <!--
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ImageObject",
+    "name": "Пирамида доказательной базы 103vet",
+    "contentUrl": "https://nutrition.103vet.by/images/evidence-pyramid.webp",
+    "url": "https://nutrition.103vet.by/images/evidence-pyramid.webp",
+    "width": 1200,
+    "height": 800,
+    "caption": "Пирамида доказательной базы: от маркетинговых заявлений к клиническим протоколам WSAVA",
+    "description": "Инфографика, показывающая 4 уровня достоверности информации о кормах: 1) Маркетинговые термины (Holistic, Natural) — без юридического веса. 2) Состав и первые 5 ингредиентов — базовый уровень анализа. 3) Гарантированный анализ и пересчёт на сухое вещество — экспертный уровень. 4) Протоколы WSAVA, стандарты AAFCO/FEDIAF — высший уровень доказательной ветеринарии.",
+    "author": {
+      "@type": "Person",
+      "name": "Главный ветеринарный врач-нутрициолог 103vet"
+    },
+    "copyrightYear": "2026",
+    "license": "https://103vet.by/terms"
+  }
+  </script>
+  -->
+
+  <style>
+    :root {
+      --bg-deep: #0D1420;
+      --bg-card: rgba(30, 41, 59, 0.4);
+      --bg-card-hover: rgba(30, 41, 59, 0.7);
+      --ink: #F1F5F9;
+      --ink-muted: #94A3B8;
+      --gold: #E2C073;
+      --gold-light: #F5DEB3;
+      --gold-deep: #B8943F;
+      --mono: 'Space Mono', monospace;
+      --serif: 'Playfair Display', serif;
+      --sans: 'Inter', sans-serif;
+      --max-width: 1320px;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: var(--sans);
+      background: var(--bg-deep);
+      background-image: 
+        radial-gradient(ellipse 80% 60% at 50% 40%, rgba(30, 41, 59, 0.6) 0%, transparent 70%),
+        radial-gradient(ellipse 60% 50% at 50% 50%, rgba(21, 30, 46, 1) 0%, rgba(13, 20, 32, 1) 100%);
+      color: var(--ink);
+      overflow-x: hidden;
+      line-height: 1.6;
+    }
+
+    .container { max-width: var(--max-width); margin: 0 auto; padding: 0 40px; width: 100%; }
+
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      border-bottom: 1px solid rgba(226, 192, 115, 0.15); 
+      background: rgba(13, 20, 32, 0.9);
+      backdrop-filter: blur(20px);
+    }
+    nav .container { display: flex; justify-content: space-between; align-items: center; padding-top: 24px; padding-bottom: 24px; }
+    .logo { font-family: var(--serif); font-size: 22px; letter-spacing: 0.05em; text-decoration: none; color: var(--gold-light); font-weight: 700; }
+    .nav-links { display: flex; gap: 40px; list-style: none; }
+    .nav-links a {
+      color: var(--ink-muted); text-decoration: none; font-family: var(--mono); font-size: 11px; font-weight: 400;
+      letter-spacing: 0.15em; text-transform: uppercase; position: relative; padding: 8px 0; transition: color 0.3s;
+    }
+    .nav-links a:hover { color: var(--gold-light); }
+
+    /* WCAG 2.4.7 / 2.4.13: Глобальный, видимый фокус для клавиатурной навигации */
+    a:focus-visible, button:focus-visible, .section-card:focus-visible {
+      outline: 3px solid var(--gold);
+      outline-offset: 4px;
+      border-radius: 4px;
+    }
+    .section-card:focus-visible {
+      border-radius: 16px;
+    }
+
+    /* HERO */
+    .hero { padding: 160px 0 100px; text-align: center; border-bottom: 1px solid rgba(226, 192, 115, 0.1); }
+    .hero-label {
+      font-family: var(--mono); font-size: 11px; letter-spacing: 0.25em; text-transform: uppercase;
+      color: var(--gold); margin-bottom: 24px; display: block;
+    }
+    .hero-title {
+      font-family: var(--serif); font-size: clamp(40px, 6vw, 72px); line-height: 1.1;
+      letter-spacing: -0.02em; margin-bottom: 24px; color: var(--ink);
+    }
+    .hero-title em { color: var(--gold-light); font-style: italic; }
+    .hero-subtitle {
+      font-size: 20px; color: var(--ink-muted); max-width: 800px; margin: 0 auto 48px; line-height: 1.6;
+    }
+    
+    /* AIO Direct Answer Block: Краткая выжимка для AI и пользователей (GEO) */
+    .geo-direct-answer {
+      background: rgba(226, 192, 115, 0.05);
+      border: 1px solid rgba(226, 192, 115, 0.2);
+      border-radius: 8px;
+      padding: 24px 32px;
+      margin: 0 auto 48px;
+      max-width: 800px;
+      text-align: left;
+    }
+    .geo-direct-answer h3 {
+      font-family: var(--serif);
+      font-size: clamp(18px, 2vw, 20px);
+      color: var(--gold-light);
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      line-height: 1.3;
+    }
+    .geo-direct-answer h3 svg {
+      flex-shrink: 0;
+      color: var(--gold);
+    }
+    .geo-direct-answer p {
+      font-size: 15px;
+      line-height: 1.7;
+      color: var(--ink-muted);
+      margin: 0;
+    }
+    .geo-direct-answer strong { color: var(--ink); font-weight: 600; }
+
+    /* Шокирующая статистика */
+    .shock-stats {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; max-width: 900px; margin: 60px auto 0;
+    }
+    .shock-stat {
+      background: var(--bg-card); border: 1px solid rgba(226, 192, 115, 0.15); border-radius: 12px;
+      padding: 32px 24px; backdrop-filter: blur(10px);
+    }
+    .shock-number {
+      font-family: var(--serif); font-size: clamp(40px, 5vw, 56px); color: var(--gold-light); line-height: 1; margin-bottom: 12px;
+    }
+    .shock-text {
+      font-size: 14px; color: var(--ink-muted); line-height: 1.5;
+    }
+    .shock-text strong { color: var(--ink); font-weight: 600; }
+
+    /* Citation Snippet Block: Семантическая цитата авторитетного источника */
+    .geo-citation-section {
+      padding: 80px 0;
+      border-bottom: 1px solid rgba(226, 192, 115, 0.1);
+    }
+    .geo-citation {
+      background: rgba(30, 41, 59, 0.6);
+      border-left: 3px solid var(--gold);
+      padding: 32px 40px;
+      margin: 0 auto;
+      max-width: 900px;
+      border-radius: 0 8px 8px 0;
+      backdrop-filter: blur(10px);
+    }
+    .geo-citation blockquote {
+      font-family: var(--serif);
+      font-size: clamp(18px, 2.5vw, 22px);
+      color: var(--ink);
+      font-style: italic;
+      margin: 0 0 20px 0;
+      line-height: 1.5;
+      letter-spacing: -0.01em;
+    }
+    .geo-citation blockquote::before {
+      content: '«';
+      color: var(--gold);
+      font-size: 1.2em;
+      margin-right: 4px;
+    }
+    .geo-citation blockquote::after {
+      content: '»';
+      color: var(--gold);
+      font-size: 1.2em;
+      margin-left: 4px;
+    }
+    .geo-citation figcaption {
+      font-family: var(--mono);
+      font-size: 12px;
+      color: var(--ink-muted);
+      letter-spacing: 0.05em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .geo-citation figcaption::before {
+      content: '—';
+      color: var(--gold);
+    }
+    .geo-citation a { 
+      color: var(--gold); 
+      text-decoration: underline; 
+      text-underline-offset: 3px;
+      transition: color 0.3s;
+    }
+    .geo-citation a:hover { color: var(--gold-light); }
+
+    /* РАЗДЕЛЫ С ХУКАМИ */
+    .sections { padding: 120px 0; border-bottom: 1px solid rgba(226, 192, 115, 0.1); }
+    .sections-header { text-align: center; margin-bottom: 80px; }
+    .sections-title {
+      font-family: var(--serif); font-size: clamp(32px, 4vw, 48px); color: var(--ink); margin-bottom: 16px;
+    }
+    .sections-subtitle { font-size: 18px; color: var(--ink-muted); max-width: 700px; margin: 0 auto; }
+
+    .sections-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); gap: 32px;
+    }
+    .section-card {
+      background: var(--bg-card); border: 1px solid rgba(226, 192, 115, 0.15); border-radius: 16px;
+      padding: 40px; text-decoration: none; color: var(--ink); transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+      position: relative; overflow: hidden; backdrop-filter: blur(12px); display: flex; flex-direction: column;
+    }
+    .section-card::before {
+      content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 3px;
+      background: linear-gradient(90deg, transparent, var(--gold), transparent); opacity: 0; transition: opacity 0.5s;
+    }
+    .section-card:hover {
+      transform: translateY(-8px); border-color: rgba(226, 192, 115, 0.5);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5), 0 0 40px rgba(226, 192, 115, 0.15);
+    }
+    .section-card:hover::before { opacity: 1; }
+
+    .section-icon { font-size: 48px; margin-bottom: 24px; opacity: 0.9; }
+    .section-hook {
+      font-family: var(--serif); font-size: 26px; color: var(--gold-light); margin-bottom: 16px; line-height: 1.2;
+    }
+    .section-problem {
+      font-size: 15px; color: var(--ink-muted); line-height: 1.6; margin-bottom: 24px; flex-grow: 1;
+    }
+    .section-problem strong { color: var(--ink); font-weight: 600; }
+    
+    .section-result {
+      background: rgba(226, 192, 115, 0.08); border-left: 3px solid var(--gold);
+      padding: 16px 20px; border-radius: 4px; margin-bottom: 24px;
+    }
+    .section-result-label {
+      font-family: var(--mono); font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase;
+      color: var(--gold); margin-bottom: 8px; display: block;
+    }
+    .section-result-text { font-size: 14px; color: var(--ink); line-height: 1.5; }
+
+    .section-meta {
+      display: flex; justify-content: space-between; align-items: center;
+      border-top: 1px solid rgba(226, 192, 115, 0.15); padding-top: 20px;
+    }
+    .section-count { font-family: var(--mono); font-size: 12px; color: var(--gold); letter-spacing: 0.1em; }
+    .section-arrow { font-family: var(--mono); font-size: 12px; color: var(--gold-light); transition: transform 0.3s; }
+    .section-card:hover .section-arrow { transform: translateX(6px); }
+
+    /* БЛОК ДОВЕРИЯ */
+    .trust { padding: 100px 0; text-align: center; border-bottom: 1px solid rgba(226, 192, 115, 0.1); }
+    .trust-title {
+      font-family: var(--serif); font-size: clamp(28px, 3.5vw, 40px); color: var(--ink); margin-bottom: 48px;
+    }
+    .trust-grid {
+      display: flex; justify-content: center; gap: 60px; flex-wrap: wrap;
+    }
+    .trust-item { text-align: center; max-width: 200px; }
+    .trust-icon { font-size: 40px; margin-bottom: 16px; }
+    .trust-label {
+      font-family: var(--mono); font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase;
+      color: var(--gold); margin-bottom: 8px;
+    }
+    .trust-text { font-size: 14px; color: var(--ink-muted); line-height: 1.5; }
+
+    /* Анимации */
+    .reveal { opacity: 0; transform: translateY(40px); transition: all 1s cubic-bezier(0.16, 1, 0.3, 1); }
+    .reveal.active { opacity: 1; transform: translateY(0); }
+
+    /* WCAG 2.3.3: Безопасность для пользователей с вестибулярными расстройствами */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+      .reveal { 
+        opacity: 1 !important; 
+        transform: none !important; 
+      }
+    }
+
+    /* Адаптив */
+    @media (max-width: 1024px) {
+      .shock-stats { grid-template-columns: 1fr; }
+      .sections-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 768px) {
+      .container { padding: 0 24px; }
+      .nav-links { display: none; }
+      .hero { padding: 120px 0 60px; }
+      .sections { padding: 80px 0; }
+      .geo-direct-answer { padding: 20px 24px; }
+      .geo-citation { padding: 24px 28px; }
+      .geo-citation-section { padding: 60px 0; }
+    }
+
+    footer { padding: 80px 0 40px; background: var(--bg-deep); text-align: center; border-top: 1px solid rgba(226, 192, 115, 0.15); }
+    footer p { color: var(--ink-muted); font-size: 13px; margin-bottom: 12px; font-family: var(--mono); letter-spacing: 0.1em; }
+    footer a { color: var(--gold); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="container">
+      <a href="/" class="logo">103vet <span style="color: var(--gold);">·</span> Nutrition</a>
+      <ul class="nav-links">
+        <li><a href="/dental">Здоровье зубов</a></li>
+        <li><a href="/gastro">Пищеварение</a></li>
+        <li><a href="/protocols">Протоколы</a></li>
+        <li><a href="/razbor-kormov">Разбор кормов</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="container reveal">
+        <span class="hero-label">[ Экосистема 103vet.by ]</span>
+        <h1 class="hero-title">Знания, которые <em>продлевают жизнь</em> вашему питомцу</h1>
+        <p class="hero-subtitle">
+          142 экспертных материала, основанных на протоколах <span lang="en">WSAVA</span> и клинических исследованиях. 
+          Каждый раздел — это инструмент, который поможет вам предотвратить болезни, распознать ошибки и принять правильные решения.
+        </p>
+
+        <!-- AIO Direct Answer Block: Краткий экспертный ответ для AI-парсеров и людей -->
+        <section class="geo-direct-answer" aria-label="Краткий экспертный ответ о базе знаний">
+          <h3>
+            <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            Краткий ответ: Что такое база знаний 103vet?
+          </h3>
+          <p>
+            <strong>Это 142 доказательных материала по ветеринарной нутрициологии,</strong> созданных практикующими врачами на основе протоколов <span lang="en">WSAVA</span>, <span lang="en">FDA</span> и <span lang="en">AAFCO</span>. База охватывает стоматологию, гастроэнтерологию и дерматологию, помогая владельцам принимать обоснованные решения о рационе собак и кошек — без рекламы производителей кормов.
+          </p>
+        </section>
+
+        <div class="shock-stats">
+          <div class="shock-stat">
+            <div class="shock-number">80%</div>
+            <div class="shock-text"><strong>собак старше 3 лет</strong> имеют признаки пародонтита, который можно предотвратить правильным питанием</div>
+          </div>
+          <div class="shock-stat">
+            <div class="shock-number">60%</div>
+            <div class="shock-text"><strong>случаев панкреатита</strong> у собак связан с ожирением и неправильным рационом — это можно контролировать</div>
+          </div>
+          <div class="shock-stat">
+            <div class="shock-number">24 часа</div>
+            <div class="shock-text"><strong>голодания у кошки</strong> могут привести к липидозу печени — критически опасному состоянию</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Citation Snippet Block: Семантическая цитата WSAVA -->
+    <section class="geo-citation-section">
+      <div class="container reveal">
+        <figure class="geo-citation">
+          <blockquote cite="https://wsava.org/global-nutrition-guidelines/">
+            Питание является краеугольным камнем профилактики и лечения многих заболеваний у домашних животных. Правильно подобранный рацион может значительно продлить жизнь питомца и улучшить её качество на каждом этапе.
+          </blockquote>
+          <figcaption>
+            <span>World Small Animal Veterinary Association (<span lang="en">WSAVA</span>), Global Nutrition Guidelines</span>
+            <a href="https://wsava.org/global-nutrition-guidelines/" target="_blank" rel="noopener noreferrer">Читать первоисточник →</a>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="sections">
+      <div class="container">
+        <div class="sections-header reveal">
+          <span class="hero-label">[ Выберите направление ]</span>
+          <h2 class="sections-title">Каждый раздел решает конкретную проблему</h2>
+          <p class="sections-subtitle">Не просто статьи — это инструменты для принятия решений, которые влияют на здоровье и продолжительность жизни вашего питомца.</p>
+        </div>
+
+        <div class="sections-grid">
+          
+          <!-- Раздел 1: Здоровье зубов -->
+          <a href="/dental" class="section-card reveal" style="transition-delay: 0.1s;">
+            <div class="section-icon" aria-hidden="true">🦷</div>
+            <h3 class="section-hook">Как предотвратить потерю зубов у питомца к 5 годам</h3>
+            <p class="section-problem">
+              <strong>80% собак и 70% кошек</strong> имеют признаки стоматологических заболеваний к 3 годам. Большинство владельцев узнают о проблеме слишком поздно, когда требуется наркоз и удаление зубов.
+            </p>
+            <div class="section-result">
+              <span class="section-result-label">После изучения вы сможете:</span>
+              <span class="section-result-text">Распознать первые признаки пародонтита, выбрать правильную текстуру корма, приучить питомца к чистке зубов за 14 дней и предотвратить дорогостоящее лечение.</span>
+            </div>
+            <div class="section-meta">
+              <span class="section-count">33 материала · 8 патологий</span>
+              <span class="section-arrow">Перейти →</span>
+            </div>
+          </a>
+
+          <!-- Раздел 2: Пищеварение -->
+          <a href="/gastro" class="section-card reveal" style="transition-delay: 0.2s;">
+            <div class="section-icon" aria-hidden="true">🔥</div>
+            <h3 class="section-hook">Как распознать и предотвратить панкреатит до того, как станет поздно</h3>
+            <p class="section-problem">
+              <strong>Острый панкреатит</strong> требует пожизненной диеты или создает критические риски для жизни. 60% случаев связаны с ожирением и смешанным кормлением. Микробиом кишечника влияет на иммунитет, кожу и поведение питомца.
+            </p>
+            <div class="section-result">
+              <span class="section-result-label">После изучения вы сможете:</span>
+              <span class="section-result-text">Рассчитать безопасную норму жиров, выбрать правильные источники Омега-3, восстановить микробиом после антибиотиков и распознать красные флаги ЖКТ-проблем.</span>
+            </div>
+            <div class="section-meta">
+              <span class="section-count">49 материалов · 10 патологий</span>
+              <span class="section-arrow">Перейти →</span>
+            </div>
+          </a>
+
+          <!-- Раздел 3: Протоколы -->
+          <a href="/protocols" class="section-card reveal" style="transition-delay: 0.3s;">
+            <div class="section-icon" aria-hidden="true">🧮</div>
+            <h3 class="section-hook">Как рассчитать точную норму питания и не навредить питомцу</h3>
+            <p class="section-problem">
+              <strong>Средние нормы на упаковках корма</strong> приводят к ожирению у 60% питомцев. Неправильный переход на новый корм вызывает диарею и пищевую аверсию. Ошибки в расчётах при ХБП ускоряют прогрессирование болезни.
+            </p>
+            <div class="section-result">
+              <span class="section-result-label">После изучения вы сможете:</span>
+              <span class="section-result-text">Рассчитать <span lang="en">RER</span> и <span lang="en">DER</span> для вашего питомца, оценить кондицию тела по шкалам <span lang="en">BCS/MCS</span>, безопасно перевести на новый корм за 7-14 дней и корректировать рацион при заболеваниях.</span>
+            </div>
+            <div class="section-meta">
+              <span class="section-count">16 материалов · Клинические протоколы</span>
+              <span class="section-arrow">Перейти →</span>
+            </div>
+          </a>
+
+          <!-- Раздел 4: Разбор кормов -->
+          <a href="/razbor-kormov" class="section-card reveal" style="transition-delay: 0.4s;">
+            <div class="section-icon" aria-hidden="true">🔍</div>
+            <h3 class="section-hook">Как перестать верить маркетингу и выбирать корм по реальному составу</h3>
+            <p class="section-problem">
+              «Холистик», <span lang="en">Natural</span>, <span lang="en">Grain-free</span> — это маркетинговые уловки без юридического веса. Сплиттинг ингредиентов маскирует растительный белок. Беззерновые корма связаны с риском <span lang="en">DCM</span> у собак.
+            </p>
+            <div class="section-result">
+              <span class="section-result-label">После изучения вы сможете:</span>
+              <span class="section-result-text">Читать состав как эксперт, распознавать манипуляции производителей, выбирать корм по реальным критериям качества и разоблачать мифы о <span lang="en">BARF</span>, вегетарианстве и аллергии на зерно.</span>
+            </div>
+            <div class="section-meta">
+              <span class="section-count">27 материалов · Разоблачение мифов</span>
+              <span class="section-arrow">Перейти →</span>
+            </div>
+          </a>
+
+          <!-- Раздел 5: Флагманы -->
+          <a href="/blog" class="section-card reveal" style="transition-delay: 0.5s; grid-column: span 1;">
+            <div class="section-icon" aria-hidden="true">📝</div>
+            <h3 class="section-hook">С чего начать, если вы хотите разобраться в нутрициологии с нуля</h3>
+            <p class="section-problem">
+              <strong>142 статьи — это много.</strong> С чего начать, чтобы не утонуть в информации? Эти 10 флагманских материалов задают стандарт и дают фундамент для понимания всех остальных тем.
+            </p>
+            <div class="section-result">
+              <span class="section-result-label">После изучения вы сможете:</span>
+              <span class="section-result-text">Понимать связь питания и здоровья на системном уровне, принимать обоснованные решения о рационе и говорить с ветеринаром на одном языке.</span>
+            </div>
+            <div class="section-meta">
+              <span class="section-count">10 материалов · Фундамент базы</span>
+              <span class="section-arrow">Перейти →</span>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="trust">
+      <div class="container reveal">
+        <h2 class="trust-title">Почему этой базе знаний можно доверять</h2>
+        <div class="trust-grid">
+          <div class="trust-item">
+            <div class="trust-icon" aria-hidden="true">🛡️</div>
+            <div class="trust-label"><span lang="en">WSAVA</span> Protocols</div>
+            <div class="trust-text">Все материалы основаны на протоколах World Small Animal Veterinary Association</div>
+          </div>
+          <div class="trust-item">
+            <div class="trust-icon" aria-hidden="true">🔬</div>
+            <div class="trust-label"><span lang="en">Evidence-Based</span></div>
+            <div class="trust-text">20+ научных источников с DOI, PubMed и клиническими исследованиями</div>
+          </div>
+          <div class="trust-item">
+            <div class="trust-icon" aria-hidden="true">🚫</div>
+            <div class="trust-label">0% Рекламы</div>
+            <div class="trust-text">Мы не получаем вознаграждение от производителей кормов. Только факты.</div>
+          </div>
+          <div class="trust-item">
+            <div class="trust-icon" aria-hidden="true">🔄</div>
+            <div class="trust-label">Ежеквартальное обновление</div>
+            <div class="trust-text">Все статьи рецензируются и обновляются каждые 3 месяца</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p style="margin-bottom: 24px; font-size: 12px; line-height: 1.6; max-width: 800px; margin-left: auto; margin-right: auto;">
+        Материалы носят исключительно информационный характер и не заменяют консультацию ветеринарного врача. 103vet.by не несет ответственности за самостоятельные решения владельца.
+      </p>
+      <p>© 2026 103vet.by · Ветеринарная нутрициология</p>
+      <p><a href="/">Главная</a> · <a href="https://103vet.by/privacy-policy">Конфиденциальность</a> · <a href="https://103vet.by/terms">Соглашение</a> · <a href="tel:+375296703198">+375 (29) 670-31-98</a></p>
+    </div>
+  </footer>
+
+  <script>
+    // Безопасный, неблокирующий JS для анимации появления с учетом prefers-reduced-motion (обрабатывается на уровне CSS)
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+    
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+  </script>
+</body>
+</html>
