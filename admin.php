@@ -270,7 +270,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $displayPhone = trim((string) ($_POST['phone'] ?? ''));
             $digits = preg_replace('/\D+/', '', $displayPhone) ?? '';
             if (!preg_match('/^\+[0-9\s().-]+$/', $displayPhone) || strlen($digits) < 8 || strlen($digits) > 15) {
-                throw new RuntimeException('Введите номер в международном формате, например +375 (29) 123-45-67.');
+                throw new RuntimeException('Введите номер в международном формате, например +375 (29) 390-03-03.');
             }
             $telPhone = '+' . $digits;
             $filesChanged = 0;
@@ -466,7 +466,7 @@ $flash ??= null;
             <div class="panel">
                 <form method="post" class="form-grid" onsubmit="return confirm('Заменить телефон во всех HTML-страницах?')">
                     <input type="hidden" name="action" value="update_phone"><input type="hidden" name="csrf" value="<?= escapeHtml($csrf) ?>">
-                    <div class="field"><label for="phone-number">Номер в международном формате</label><input id="phone-number" name="phone" type="tel" inputmode="tel" placeholder="+375 (29) 123-45-67" pattern="\+[0-9 ().-]{8,}" required></div>
+                    <div class="field"><label for="phone-number">Номер в международном формате</label><input id="phone-number" name="phone" type="tel" inputmode="tel" placeholder="+375 (29) 390-03-03" pattern="\+[0-9 ().-]{8,}" required></div>
                     <button class="btn" type="submit">Обновить телефон</button>
                 </form>
                 <p class="note">Обновляются номера с международным префиксом и все ссылки `tel:`.</p>
